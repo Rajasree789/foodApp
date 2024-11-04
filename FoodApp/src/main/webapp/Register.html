@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        /* Background with gradient and image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, rgba(255, 94, 98, 0.8), rgba(68, 166, 187, 0.8)), 
+                        url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Centered form styling */
+        .form-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #444;
+        }
+
+        /* Align labels and inputs horizontally */
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-size: 1.1em;
+            margin-right: 10px;
+            flex-basis: 30%;
+            text-align: left;
+        }
+
+        /* Input fields styling */
+        .input-group input[type="text"] {
+            flex-basis: 65%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.1em;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border: 1px solid #44a6bb;
+            box-shadow: 0 0 8px rgba(68, 166, 187, 0.8);
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #44a6bb;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff5e62;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+    <form action = "insertUser">
+        <h1>Register Page</h1>
+        <div class="input-group">
+            <label>Username:</label>
+            <input type="text" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+            <label>Email:</label>
+            <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+            <label>Password:</label>
+            <input type="text" placeholder="Enter your password">
+        </div>
+        <div class="input-group">
+            <label>Address:</label>
+            <input type="text" placeholder="Enter your address">
+        </div>
+        
+        <button>Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
